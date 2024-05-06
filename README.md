@@ -50,6 +50,6 @@
 - 参考記事
   - 1. [紙吹雪：Canvas Confetti](https://www.kirilv.com/canvas-confetti/)
   - 2. [音声を入れる](https://jp-seemore.com/web/3576/)
-  - 3. [タイピング風テキスト]（https://coco-factory.jp/ugokuweb/move02/8-10/）
+  - 3. [タイピング風テキスト](https://coco-factory.jp/ugokuweb/move02/8-10/)
    
 - Special Thanks to 吉本興業様
