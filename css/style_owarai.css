@@ -14,6 +14,7 @@ header {
     justify-content: center;
     background-color: #171717;
     color: #ffffff;
+    position: relative;
 }
 
 h1 {
@@ -39,8 +40,7 @@ main {
 
 /* ボタン */
 #start-btn {
-    /* background-color: #e84709; */
-    background-color: #11a37f;
+    background-color: #13c196;
     color: #ffffff;
     width: 100px;
     height: 100px;
@@ -56,6 +56,10 @@ main {
 }
 
 #start-btn:hover {
+    background-color: #11a37f;
+}
+
+#start-btn:active {
     border-top: 4px solid #0f745b;
     border-right: 4px solid #8cf9de;
     border-bottom: 4px solid #48ecc4;
@@ -104,7 +108,6 @@ main {
     border-right: 4px solid #704308;
     border-bottom: 4px solid #704308;
     border-left: 4px solid #e1ce08;
-    /* background-image: linear-gradient(135deg, #704308 0%, #ffce08 40%, #e1ce08 60%, #704308 100%); */
     background-image: linear-gradient(135deg, #b8751e 0%, #ffce08 37%, #fefeb2 47%, #fafad6 50%, #fefeb2 53%, #e1ce08 63%, #b8751e 100%);
 }
 
