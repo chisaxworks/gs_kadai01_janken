@@ -1,9 +1,5 @@
 $("#start-btn").on("click",function(){
 
-    $("#boke-words").css('display','block');
-    $("#tukkomi-words").css('display','block');
-    $(".triangle").css('display','block');
-
     // 乱数を作るforボケチーム
     const rb = Math.ceil(Math.random()*3);
     console.log(rb);
@@ -59,6 +55,10 @@ $("#start-btn").on("click",function(){
         $("#combi-name").css('display','none');
         $("#audience").css('display','none');
     }
+
+    $("#boke-words").css('display','block');
+    $("#tukkomi-words").css('display','block');
+    $(".triangle").css('display','block');
 
 });
 
