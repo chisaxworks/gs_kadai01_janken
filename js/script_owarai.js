@@ -46,23 +46,14 @@ $("#start-btn").on("click",function(){
 
     // 判定
     if (bokeName === 'くるま' && tukkomiName === 'けむり') {
-        $("#combi-name").css('display','block');
+        combiMatch();
         $("#combi-name").html('令和ロマン');
-        $("#audience").css('display','block');
-        canvasConfetti();
-        cheerSound();
     } else if(bokeName === '堂前' && tukkomiName === '兎'){
-        $("#combi-name").css('display','block');
+        combiMatch();
         $("#combi-name").html('ロングコートダディ');
-        $("#audience").css('display','block');
-        canvasConfetti();
-        cheerSound();
     } else if(bokeName === '永見' && tukkomiName === '浜田'){
-        $("#combi-name").css('display','block');
+        combiMatch();
         $("#combi-name").html('カベポスター');
-        $("#audience").css('display','block');
-        canvasConfetti();
-        cheerSound();
     } else {
         $("#combi-name").html('');
         $("#combi-name").css('display','none');
@@ -71,20 +62,17 @@ $("#start-btn").on("click",function(){
 
 });
 
-// リセット
-$("#reset-btn").on("click",function(){
-    location.reload();  // ページを再読み込み
-});
+// マッチした時の動作を下記にまとめる
+function combiMatch(){
+// 表示
+    $("#combi-name").css('display','block');
+    $("#audience").css('display','block');
 
 // 音声
-function cheerSound(){
     const audio = new Audio('audio/cheer.mp3');
     audio.play();
-}
 
 // 紙吹雪
-function canvasConfetti(){
-
     var end = Date.now() + (15 * 50);
     var colors = ['#D0A900', '#fefeb2'];
 
@@ -111,3 +99,8 @@ function canvasConfetti(){
         }
     }());
 }
+
+// リセット
+$("#reset-btn").on("click",function(){
+    location.reload();  // ページを再読み込み
+});
